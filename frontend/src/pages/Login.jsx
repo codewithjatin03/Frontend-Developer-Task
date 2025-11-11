@@ -27,7 +27,7 @@ function Login() {
             return handleError('email and password are required')
         }
         try {
-            const url =  `${import.meta.env.VITE_API_URL}/auth/login`;
+            const url =  `https://frontend-developer-task-live.onrender.com/auth/login`;
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
@@ -123,3 +123,4 @@ function Login() {
 }
 
 export default Login
+
